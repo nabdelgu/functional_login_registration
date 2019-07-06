@@ -6,7 +6,8 @@ const session = require('express-session');
 const passport = require('passport');
 
 const app = express();
-
+//import stylesheets
+app.use(express.static(__dirname + '/public'));
 //passport Config
 require('./config/passport')(passport);
 

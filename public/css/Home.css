@@ -1,0 +1,90 @@
+body {
+  background-color: #ffa64d;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: #ff751a;
+}
+
+button:hover {
+  background: #ffb380;
+}
+
+nav {
+  width: 100%;
+}
+
+.teacher-title {
+  height: 300px;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.teacher-title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.info {
+  display: inline-block;
+}
+
+.info li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 15px;
+}
+
+.how-it-works {
+  margin-top: 20px;
+}
+
+.footer li {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  line-height: 0;
+  position: absolute;
+  margin-bottom: 0;
+}
+
+.teacher-title img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.login-form,
+.registration-form {
+  background-color: #607d8bb8;
+}
+
+.login-icon {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.register-icon{
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.logout{
+  margin-left: 200px;
+  display: inline-block;
+}
