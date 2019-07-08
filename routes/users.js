@@ -16,12 +16,21 @@ router.get('/register', forwardAuthenticated, (req,res) => res.render('register'
 
 // Register Handle
 router.post('/register', (req, res) => {
-  const { name, email, password, password2 } = req.body;
+  console.log(req.body);
+  const { name, email, password, password2, checkBox1, checkBox2 } = req.body;
+  console.log(checkBox1);
+  console.log(checkBox2);
   let errors = [];
+
+  const emailUpper = email.toUpperCase();
 
   // Check required fields
   if(!name || !email || !password || !password2){
     errors.push({ msg: 'Please fill in all fields' });
+  }
+  // Check if emailAis a SELU email
+  if(emailUpper.includes("SELU.EDU")){
+    errors.push({ msg: 'Cannot use SELU email' });
   }
 
   //Check passwords match

@@ -11,7 +11,6 @@ app.use(express.static(__dirname + '/public'));
 //passport Config
 require('./config/passport')(passport);
 
-
 // DB Config
 const db = require('./config/keys').MongoURI;
 
@@ -52,6 +51,7 @@ app.use((req, res, next) => {
 //routes
 app.use('/', require('./routes/index'));
 app.use('/users', require('./routes/users'));
+
 
 const PORT = process.env.PORT || 5000;
 

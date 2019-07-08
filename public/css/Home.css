@@ -1,5 +1,5 @@
 body {
-  background-color: #ffa64d;
+  background-color: #d37920c7;
 }
 
 a {
@@ -19,11 +19,11 @@ nav {
 }
 
 .teacher-title {
-  height: 300px;
+  height: 150px;
 }
 
 .about {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .teacher-title {
@@ -82,9 +82,4 @@ footer {
   height: 50px;
   display: inline-block;
   text-align: center;
-}
-
-.logout{
-  margin-left: 200px;
-  display: inline-block;
 }
